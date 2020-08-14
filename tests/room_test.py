@@ -8,14 +8,14 @@ from classes.song import Song
 class TestRoom(unittest.TestCase):
 
     def setUp(self):
-        self.room_1 = Room("Bollywood", 3, 5, 10)
-        self.room_2 = Room("Tollywood", 5, 10, 20)
-        self.guest_1 = Guest("Abhi", 20, 30)
-        self.guest_2 = Guest("Rakesh", 29, 20)
-        self.guest_3 = Guest("Tarun", 40, 60)
-        self.song_1 = Song("Sunoh", "Lucky Ali", 3.25, "Oh Sanam...")
-        self.song_2 = Song("Rockstar", "Mohit Chauhan", 4.00, "Saada Haq...")
-        self.song_3 = Song("Kedarnath", "Amit", 5.25, "Namo Shankara...")
+        self.room = Room("Bollywood", 3, 5, 10)
+        # self.room_2 = Room("Tollywood", 5, 10, 20)
+        self.guest = Guest("Abhi", 20, 30)
+        # self.guest_2 = Guest("Rakesh", 29, 20)
+        # self.guest_3 = Guest("Tarun", 40, 60)
+        self.song = Song("Sunoh", "Lucky Ali", 3.25, "Oh Sanam...")
+        # self.song_2 = Song("Rockstar", "Mohit Chauhan", 4.00, "Saada Haq...")
+        # self.song_3 = Song("Kedarnath", "Amit", 5.25, "Namo Shankara...")
 
         def test_room_has_name(self):
             self.assertEqual("Bollywood", self.room.name)
