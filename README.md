@@ -2,6 +2,6 @@
 
 **Weekned HW**
 
-This is the assignment involvong Python.
+This is the assignment involving Python.
 
 
